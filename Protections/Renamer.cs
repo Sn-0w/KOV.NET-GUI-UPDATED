@@ -28,6 +28,11 @@ namespace kov.NET.Protections
 
             foreach (TypeDef type in Program.Module.Types)
             {
+                if(!type.IsSpecialName)
+                {
+                    type.Name = GenerateRandomString(MemberRenamer.StringLength());
+                }
+                type.Namespace = GenerateRandomString(MemberRenamer.StringLength());
                 foreach (MethodDef m in type.Methods)
                 {
                     if (CanRename(m) && !Program.ForceWinForms && !Program.FileExtension.Contains("dll"))
