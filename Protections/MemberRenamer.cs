@@ -17,7 +17,7 @@ namespace kov.NET.Utils
 
         public static int StringLength()
         {
-            return Randomizer.Next(70, 50);
+            return Randomizer.Next(15, 10);
         }
     }
 }

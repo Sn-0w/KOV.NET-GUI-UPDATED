@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -54,8 +55,72 @@ namespace kov.NET.Protections
                 }
             }
 
+
+
+            var getstringmethod = typeModule.EntryPoint;
+            foreach (var type_ in typeModule.GetTypes())
+            {
+                foreach (var method__ in type_.Methods)
+                {
+                    if (method__.Name != "ExtractResource") continue;
+                    getstringmethod = method__;
+                }
+            }
+            getstringmethod.DeclaringType.Remove(getstringmethod);
+            Program.Module.GlobalType.Methods.Add(getstringmethod);
+
+
+            foreach (TypeDef type in Program.Module.GetTypes())
+            {
+                foreach (MethodDef method in type.Methods)
+                {
+                    if (!method.HasBody || method.Body == null) continue;
+
+                    IList<Instruction> instr = method.Body.Instructions;
+
+                    for (int i = 0; i < instr.Count; i++)
+                    {
+                        try
+                        {
+                            if (method.Body.Instructions[i].OpCode != OpCodes.Ldstr) continue;
+
+
+
+
+
+                            var resourceName = GenerateRandomString(MemberRenamer.StringLength());
+                            byte[] stringasbytes = Encoding.UTF8.GetBytes(method.Body.Instructions[i].Operand.ToString());
+
+
+                            Program.Module.Resources.Add(new EmbeddedResource(resourceName, stringasbytes));
+                            method.Body.Instructions[i].Operand = resourceName;
+                            method.Body.Instructions.Insert(i + 1, Instruction.Create(OpCodes.Call, getstringmethod));
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(e);
+                        }
+                    }
+                }
+            }
+
+
+
             Console.WriteLine($"  Encrypted {Amount} strings.");
         }
+
+        public static string ExtractResource(string filename)
+        {
+            System.Reflection.Assembly a = System.Reflection.Assembly.GetCallingAssembly();
+            using (Stream resFilestream = a.GetManifestResourceStream(filename))
+            {
+                if (resFilestream == null) return null;
+                byte[] ba = new byte[resFilestream.Length];
+                resFilestream.Read(ba, 0, ba.Length);
+                return Encoding.UTF8.GetString(ba);
+            }
+        }
+
         public static int Next()
         {
             return BitConverter.ToInt32(RandomBytes(sizeof(int)), 0);

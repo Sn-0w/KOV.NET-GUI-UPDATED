@@ -17,9 +17,7 @@ namespace kov.NET.Protections
 
         private static int EventAmount { get; set; }
 
-        /// <summary>
-        /// Execution of the 'Renamer' method. It'll rename types, methods and their parameters, properties, fields and events to random strings. But before they get renamed, they get analyzed to see if they are good to be renamed. (That prevents the program being broken)
-        /// </summary>
+
         public static void Execute()
         {
             if (Program.DontRename) return;
@@ -72,11 +70,6 @@ namespace kov.NET.Protections
                 $"\n  Renamed {PropertyAmount} properties.\n  Renamed {FieldAmount} fields.\n  Renamed {EventAmount} events.");
         }
 
-        /// <summary>
-        /// This will check with some analyzers if it's possible to rename a member def { TypeDef, PropertyDef, MethodDef, EventDef, FieldDef, Parameter (NOT DEF) }.
-        /// </summary>
-        /// <param name="obj">The determinate to check.</param>
-        /// <returns>If the determinate can be renamed.</returns>
 		public static bool CanRename(object obj)
         {
             DefAnalyzer analyze;
