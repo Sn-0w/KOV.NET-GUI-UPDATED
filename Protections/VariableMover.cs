@@ -1,4 +1,5 @@
-﻿using dnlib.DotNet.Emit;
+﻿using dnlib.DotNet;
+using dnlib.DotNet.Emit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,11 @@ namespace kov.NET.Protections
     {
         public static void Execute()
         {
+            var renamedvartype = new TypeDefUser("n", "t",
+                                Program.Module.CorLibTypes.Object.TypeDefOrRef);
+            renamedvartype.Attributes = TypeAttributes.Public | TypeAttributes.AutoLayout |
+                                TypeAttributes.Class | TypeAttributes.AnsiClass;
+            Program.Module.Types.Add(renamedvartype);
             foreach (var type in Program.Module.GetTypes())
             {
                 foreach (var method in type.Methods)
@@ -22,6 +28,9 @@ namespace kov.NET.Protections
                     int addedints = 0;
                     // just trolling
                     var fucked_typesig = Program.Module.ImportAsTypeSig(typeof(int************************************************************************************************************************************************************************************));
+
+                    fucked_typesig = renamedvartype.ToTypeSig();
+
                     for (int i = 0; i < method.Body.Instructions.Count(); i++)
                     {
                         var instr = method.Body.Instructions;
