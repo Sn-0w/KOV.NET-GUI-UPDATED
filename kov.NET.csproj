@@ -37,8 +37,8 @@
     <StartupObject>kov.NET.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="dnlib, Version=3.3.2.0, Culture=neutral, PublicKeyToken=50e96378b6e77999, processorArchitecture=MSIL">
-      <HintPath>..\..\EtherShield_Obfuscator_5\EtherShield_Obfuscator_5\bin\Debug\dnlib.dll</HintPath>
+    <Reference Include="dnlib, Version=3.3.5.0, Culture=neutral, PublicKeyToken=50e96378b6e77999, processorArchitecture=MSIL">
+      <HintPath>packages\dnlib.3.3.5\lib\net45\dnlib.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI">
       <HintPath>..\..\Desktop\Exxon.Pro-Shell\Exxon.Pro-Shell\bin\Debug\Guna.UI.dll</HintPath>
@@ -64,7 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="CFlowHelper.cs" />
+    <Compile Include="Protections\Control Flow\CFlowHelper.cs" />
     <Compile Include="CryptoRandom.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -74,9 +74,8 @@
     </Compile>
     <Compile Include="ProxyInts.cs" />
     <Compile Include="IntAdder.cs" />
-    <Compile Include="AntiDe4Dot.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ControlFlow.cs" />
+    <Compile Include="Protections\Control Flow\ControlFlow.cs" />
     <Compile Include="L2F.cs" />
     <Compile Include="IntEncoding.cs" />
     <Compile Include="Renamer.cs" />
@@ -100,7 +99,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainForm.resx">
@@ -115,6 +113,7 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\75764647.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
