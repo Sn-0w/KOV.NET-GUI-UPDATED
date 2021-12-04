@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.siticoneControlBox1 = new Siticone.UI.WinForms.SiticoneControlBox();
             this.siticoneButton1 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneButton2 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneButton3 = new Siticone.UI.WinForms.SiticoneButton();
@@ -44,14 +45,12 @@
             this.siticoneButton8 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneButton7 = new Siticone.UI.WinForms.SiticoneButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.siticoneCustomCheckBox7 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
             this.siticoneCustomCheckBox6 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
             this.siticoneCustomCheckBox5 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
             this.siticoneCustomCheckBox4 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
             this.siticoneCustomCheckBox3 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
             this.siticoneCustomCheckBox2 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
             this.siticoneCustomCheckBox1 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -66,17 +65,16 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.siticoneControlBox1 = new Siticone.UI.WinForms.SiticoneControlBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.siticoneTransparentDrag1 = new Siticone.UI.WinForms.SiticoneTransparentDrag();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -87,8 +85,8 @@
             this.panel4.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,13 +99,29 @@
             this.panel1.Size = new System.Drawing.Size(718, 43);
             this.panel1.TabIndex = 0;
             // 
+            // siticoneControlBox1
+            // 
+            this.siticoneControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.siticoneControlBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.siticoneControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.siticoneControlBox1.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.siticoneControlBox1.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.siticoneControlBox1.HoveredState.Parent = this.siticoneControlBox1;
+            this.siticoneControlBox1.IconColor = System.Drawing.Color.White;
+            this.siticoneControlBox1.Location = new System.Drawing.Point(649, 8);
+            this.siticoneControlBox1.Name = "siticoneControlBox1";
+            this.siticoneControlBox1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.siticoneControlBox1.ShadowDecoration.Parent = this.siticoneControlBox1;
+            this.siticoneControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.siticoneControlBox1.TabIndex = 9;
+            // 
             // siticoneButton1
             // 
             this.siticoneButton1.BorderRadius = 3;
             this.siticoneButton1.CheckedState.Parent = this.siticoneButton1;
             this.siticoneButton1.CustomImages.Parent = this.siticoneButton1;
             this.siticoneButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.siticoneButton1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneButton1.ForeColor = System.Drawing.Color.White;
             this.siticoneButton1.HoveredState.Parent = this.siticoneButton1;
             this.siticoneButton1.Location = new System.Drawing.Point(12, 137);
@@ -125,7 +139,7 @@
             this.siticoneButton2.CheckedState.Parent = this.siticoneButton2;
             this.siticoneButton2.CustomImages.Parent = this.siticoneButton2;
             this.siticoneButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.siticoneButton2.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneButton2.ForeColor = System.Drawing.Color.White;
             this.siticoneButton2.HoveredState.Parent = this.siticoneButton2;
             this.siticoneButton2.Location = new System.Drawing.Point(12, 64);
@@ -143,7 +157,7 @@
             this.siticoneButton3.CheckedState.Parent = this.siticoneButton3;
             this.siticoneButton3.CustomImages.Parent = this.siticoneButton3;
             this.siticoneButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.siticoneButton3.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneButton3.ForeColor = System.Drawing.Color.White;
             this.siticoneButton3.HoveredState.Parent = this.siticoneButton3;
             this.siticoneButton3.Location = new System.Drawing.Point(12, 101);
@@ -172,7 +186,7 @@
             this.siticoneButton6.CheckedState.Parent = this.siticoneButton6;
             this.siticoneButton6.CustomImages.Parent = this.siticoneButton6;
             this.siticoneButton6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.siticoneButton6.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneButton6.ForeColor = System.Drawing.Color.White;
             this.siticoneButton6.HoveredState.Parent = this.siticoneButton6;
             this.siticoneButton6.Location = new System.Drawing.Point(19, 61);
@@ -188,7 +202,7 @@
             this.siticoneButton4.CheckedState.Parent = this.siticoneButton4;
             this.siticoneButton4.CustomImages.Parent = this.siticoneButton4;
             this.siticoneButton4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.siticoneButton4.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneButton4.ForeColor = System.Drawing.Color.White;
             this.siticoneButton4.HoveredState.Parent = this.siticoneButton4;
             this.siticoneButton4.Location = new System.Drawing.Point(19, 97);
@@ -204,7 +218,7 @@
             this.siticoneButton5.CheckedState.Parent = this.siticoneButton5;
             this.siticoneButton5.CustomImages.Parent = this.siticoneButton5;
             this.siticoneButton5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.siticoneButton5.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneButton5.ForeColor = System.Drawing.Color.White;
             this.siticoneButton5.HoveredState.Parent = this.siticoneButton5;
             this.siticoneButton5.Location = new System.Drawing.Point(19, 24);
@@ -243,11 +257,11 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(90, 28);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(164, 26);
+            this.label9.Size = new System.Drawing.Size(141, 18);
             this.label9.TabIndex = 8;
             this.label9.Text = "Protection / Settings";
             // 
@@ -257,7 +271,7 @@
             this.siticoneButton9.CheckedState.Parent = this.siticoneButton9;
             this.siticoneButton9.CustomImages.Parent = this.siticoneButton9;
             this.siticoneButton9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.siticoneButton9.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneButton9.ForeColor = System.Drawing.Color.White;
             this.siticoneButton9.HoveredState.Parent = this.siticoneButton9;
             this.siticoneButton9.Location = new System.Drawing.Point(95, 401);
@@ -275,7 +289,7 @@
             this.siticoneButton8.CheckedState.Parent = this.siticoneButton8;
             this.siticoneButton8.CustomImages.Parent = this.siticoneButton8;
             this.siticoneButton8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.siticoneButton8.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneButton8.ForeColor = System.Drawing.Color.White;
             this.siticoneButton8.HoveredState.Parent = this.siticoneButton8;
             this.siticoneButton8.Location = new System.Drawing.Point(95, 365);
@@ -293,7 +307,7 @@
             this.siticoneButton7.CheckedState.Parent = this.siticoneButton7;
             this.siticoneButton7.CustomImages.Parent = this.siticoneButton7;
             this.siticoneButton7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.siticoneButton7.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneButton7.ForeColor = System.Drawing.Color.White;
             this.siticoneButton7.HoveredState.Parent = this.siticoneButton7;
             this.siticoneButton7.Location = new System.Drawing.Point(95, 329);
@@ -308,14 +322,12 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.panel3.Controls.Add(this.siticoneCustomCheckBox7);
             this.panel3.Controls.Add(this.siticoneCustomCheckBox6);
             this.panel3.Controls.Add(this.siticoneCustomCheckBox5);
             this.panel3.Controls.Add(this.siticoneCustomCheckBox4);
             this.panel3.Controls.Add(this.siticoneCustomCheckBox3);
             this.panel3.Controls.Add(this.siticoneCustomCheckBox2);
             this.panel3.Controls.Add(this.siticoneCustomCheckBox1);
-            this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label5);
@@ -328,24 +340,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(442, 257);
             this.panel3.TabIndex = 0;
-            // 
-            // siticoneCustomCheckBox7
-            // 
-            this.siticoneCustomCheckBox7.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.siticoneCustomCheckBox7.CheckedState.BorderRadius = 2;
-            this.siticoneCustomCheckBox7.CheckedState.BorderThickness = 0;
-            this.siticoneCustomCheckBox7.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.siticoneCustomCheckBox7.CheckedState.Parent = this.siticoneCustomCheckBox7;
-            this.siticoneCustomCheckBox7.Location = new System.Drawing.Point(400, 178);
-            this.siticoneCustomCheckBox7.Name = "siticoneCustomCheckBox7";
-            this.siticoneCustomCheckBox7.ShadowDecoration.Parent = this.siticoneCustomCheckBox7;
-            this.siticoneCustomCheckBox7.Size = new System.Drawing.Size(20, 20);
-            this.siticoneCustomCheckBox7.TabIndex = 23;
-            this.siticoneCustomCheckBox7.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.siticoneCustomCheckBox7.UncheckedState.BorderRadius = 2;
-            this.siticoneCustomCheckBox7.UncheckedState.BorderThickness = 0;
-            this.siticoneCustomCheckBox7.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.siticoneCustomCheckBox7.UncheckedState.Parent = this.siticoneCustomCheckBox7;
             // 
             // siticoneCustomCheckBox6
             // 
@@ -455,91 +449,80 @@
             this.siticoneCustomCheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.siticoneCustomCheckBox1.UncheckedState.Parent = this.siticoneCustomCheckBox1;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(16, 178);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 23);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Anti D4dot";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(16, 152);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 23);
+            this.label7.Size = new System.Drawing.Size(53, 16);
             this.label7.TabIndex = 13;
             this.label7.Text = "Proxies";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(16, 124);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 23);
+            this.label6.Size = new System.Drawing.Size(90, 16);
             this.label6.TabIndex = 12;
             this.label6.Text = "Local to fields";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(16, 98);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 23);
+            this.label5.Size = new System.Drawing.Size(110, 16);
             this.label5.TabIndex = 11;
             this.label5.Text = "Encode Intergers";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(16, 72);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 23);
+            this.label4.Size = new System.Drawing.Size(70, 16);
             this.label4.TabIndex = 10;
             this.label4.Text = "Renaming";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(16, 46);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 23);
+            this.label3.Size = new System.Drawing.Size(81, 16);
             this.label3.TabIndex = 9;
             this.label3.Text = "Control Flow";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(16, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 23);
+            this.label2.Size = new System.Drawing.Size(108, 16);
             this.label2.TabIndex = 8;
             this.label2.Text = "String Encryption";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(9, 225);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 19);
+            this.label1.Size = new System.Drawing.Size(103, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "Current file directory:";
             // 
@@ -566,11 +549,11 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(87, 30);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(182, 26);
+            this.label10.Size = new System.Drawing.Size(154, 18);
             this.label10.TabIndex = 10;
             this.label10.Text = "Changelogs / Updates";
             // 
@@ -578,7 +561,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.panel4.Controls.Add(this.richTextBox1);
-            this.panel4.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel4.ForeColor = System.Drawing.Color.White;
             this.panel4.Location = new System.Drawing.Point(92, 59);
             this.panel4.Name = "panel4";
@@ -616,97 +599,30 @@
             this.panel6.Controls.Add(this.label17);
             this.panel6.Controls.Add(this.pictureBox1);
             this.panel6.Controls.Add(this.label13);
-            this.panel6.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel6.ForeColor = System.Drawing.Color.White;
             this.panel6.Location = new System.Drawing.Point(94, 182);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(442, 108);
             this.panel6.TabIndex = 13;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(99, 18);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(54, 26);
-            this.label13.TabIndex = 13;
-            this.label13.Text = "Duck!";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(89, 30);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 26);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "Credits";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.panel5.Controls.Add(this.label15);
-            this.panel5.Controls.Add(this.label14);
-            this.panel5.Controls.Add(this.pictureBox2);
-            this.panel5.Controls.Add(this.label12);
-            this.panel5.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel5.ForeColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(94, 59);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(442, 108);
-            this.panel5.TabIndex = 11;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(99, 17);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(78, 26);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "Yully1337";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(111, 43);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(126, 22);
-            this.label14.TabIndex = 16;
-            this.label14.Text = "Discord: yully#3332";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(111, 65);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(181, 22);
-            this.label15.TabIndex = 17;
-            this.label15.Text = "Job : GUI Interface + Backend";
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(111, 66);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(231, 22);
+            this.label16.Size = new System.Drawing.Size(209, 15);
             this.label16.TabIndex = 19;
             this.label16.Text = "Job : Obfuscation Methods / Backend";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(111, 44);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(133, 22);
+            this.label17.Size = new System.Drawing.Size(121, 15);
             this.label17.TabIndex = 18;
             this.label17.Text = "Discord: Duck!#4633";
             // 
@@ -719,6 +635,62 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(99, 18);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(46, 18);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "Duck!";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(89, 30);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(55, 18);
+            this.label11.TabIndex = 12;
+            this.label11.Text = "Credits";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.panel5.Controls.Add(this.label15);
+            this.panel5.Controls.Add(this.label14);
+            this.panel5.Controls.Add(this.pictureBox2);
+            this.panel5.Controls.Add(this.label12);
+            this.panel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel5.ForeColor = System.Drawing.Color.White;
+            this.panel5.Location = new System.Drawing.Point(94, 59);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(442, 108);
+            this.panel5.TabIndex = 11;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(111, 65);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(168, 15);
+            this.label15.TabIndex = 17;
+            this.label15.Text = "Job : GUI Interface + Backend";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(111, 43);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(113, 15);
+            this.label14.TabIndex = 16;
+            this.label14.Text = "Discord: yully#3332";
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -729,21 +701,16 @@
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
             // 
-            // siticoneControlBox1
+            // label12
             // 
-            this.siticoneControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.siticoneControlBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.siticoneControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.siticoneControlBox1.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.siticoneControlBox1.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.siticoneControlBox1.HoveredState.Parent = this.siticoneControlBox1;
-            this.siticoneControlBox1.IconColor = System.Drawing.Color.White;
-            this.siticoneControlBox1.Location = new System.Drawing.Point(649, 8);
-            this.siticoneControlBox1.Name = "siticoneControlBox1";
-            this.siticoneControlBox1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.siticoneControlBox1.ShadowDecoration.Parent = this.siticoneControlBox1;
-            this.siticoneControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.siticoneControlBox1.TabIndex = 9;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(99, 17);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(70, 18);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Yully1337";
             // 
             // siticoneTransparentDrag1
             // 
@@ -780,9 +747,9 @@
             this.tabPage3.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -809,7 +776,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -821,7 +787,6 @@
         private Siticone.UI.WinForms.SiticoneCustomCheckBox siticoneCustomCheckBox3;
         private Siticone.UI.WinForms.SiticoneCustomCheckBox siticoneCustomCheckBox2;
         private Siticone.UI.WinForms.SiticoneCustomCheckBox siticoneCustomCheckBox1;
-        private Siticone.UI.WinForms.SiticoneCustomCheckBox siticoneCustomCheckBox7;
         private Siticone.UI.WinForms.SiticoneCustomCheckBox siticoneCustomCheckBox6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel4;

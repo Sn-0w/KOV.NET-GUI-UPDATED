@@ -24,12 +24,13 @@ namespace kov.NET.Utils
 
         public static string GenerateRandomString(int size)
         {
-            byte[] data = new byte[4 * size];
-            csp.GetNonZeroBytes(data);
-            StringBuilder sb = new StringBuilder(size);
-            for (int i = 0; i < size; i++) sb.Append(chars[BitConverter.ToUInt32(data, i * 4)
-                % chars.Length]);
-            return sb.ToString();
+            StringBuilder stringy = new StringBuilder();
+            for (int i = 0; i < size; i++)
+            {
+                var renamer = "_" + Next(100000, 10000);
+                stringy.Append(renamer);
+            }
+            return stringy.ToString();
         }
 
         private static uint RandomUInt()
