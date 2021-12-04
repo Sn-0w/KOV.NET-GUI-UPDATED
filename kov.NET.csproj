@@ -96,6 +96,7 @@
     <Compile Include="Protections\Utils\Randomizer.cs" />
     <Compile Include="Protections\MemberRenamer.cs" />
     <Compile Include="Protections\StringDecoder.cs" />
+    <Compile Include="Protections\VariableMover.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Project Files\App.config" />

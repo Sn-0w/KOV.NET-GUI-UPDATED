@@ -22,7 +22,7 @@ namespace kov.NET
         {
             InitializeComponent();
         }
-        private async void siticoneButton7_Click(object sender, EventArgs e)
+        private void siticoneButton7_Click(object sender, EventArgs e)
         {
             if(siticoneCustomCheckBox1.Checked)
             {
@@ -49,6 +49,11 @@ namespace kov.NET
                 Console.WriteLine("Adding Proxys...");
                 ProxyInts.Execute();
             }
+            if (siticoneCustomCheckBox7.Checked)
+            {
+                Console.WriteLine("Moving Variables...");
+                VariableMover.Execute();
+            }
             if (siticoneCustomCheckBox3.Checked)
             {
                 Console.WriteLine("Renaming...");
@@ -58,10 +63,7 @@ namespace kov.NET
             var pathez = $"{Program.FilePath}-kov.exe";
             ModuleWriterOptions opts = new ModuleWriterOptions(Program.Module) { Logger = DummyLogger.NoThrowInstance };
             Program.Module.Write(pathez, opts);
-            Console.Clear();
             Console.Write("Obfuscated!");
-            await Task.Delay(2000);
-            Console.Clear();
 
         }
 
