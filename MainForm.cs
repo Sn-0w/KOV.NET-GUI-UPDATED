@@ -29,11 +29,6 @@ namespace kov.NET
                 Console.WriteLine("Encrypting strings...");
                 StringEncryption.Execute();
             }
-            if (siticoneCustomCheckBox3.Checked)
-            {
-                Console.WriteLine("Renaming...");
-                Renamer.Execute();
-            }
             if (siticoneCustomCheckBox4.Checked)
             {
                 Console.WriteLine("Encoding ints...");
@@ -54,11 +49,10 @@ namespace kov.NET
                 Console.WriteLine("Adding Proxys...");
                 ProxyInts.Execute();
             }
-            if (siticoneCustomCheckBox7.Checked)
+            if (siticoneCustomCheckBox3.Checked)
             {
-                Console.WriteLine("Injecting AntiDe4Dot...");
-                AntiDe4Dot.Execute();
-
+                Console.WriteLine("Renaming...");
+                Renamer.Execute();
             }
 
             var pathez = $"{Program.FilePath}-kov.exe";

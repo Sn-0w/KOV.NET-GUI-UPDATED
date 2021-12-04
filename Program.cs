@@ -23,14 +23,9 @@ namespace kov.NET
 
         static void Main(string[] args)
         {
-           
             Console.Title = "Kov.net / Debug Logs";
             Application.EnableVisualStyles();
             Application.Run(new MainForm());
-
-  
-
-            
         }
     }
 }
