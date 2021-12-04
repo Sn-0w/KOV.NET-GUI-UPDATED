@@ -21,6 +21,7 @@ namespace kov.NET
 
         public static string FilePath { get; set; }
 
+        [STAThread]
         static void Main(string[] args)
         {
             Console.Title = "Kov.net / Debug Logs";

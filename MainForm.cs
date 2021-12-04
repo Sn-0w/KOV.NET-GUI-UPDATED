@@ -65,18 +65,25 @@ namespace kov.NET
 
         }
 
-        private async void siticoneButton8_Click(object sender, EventArgs e)
+        private void siticoneButton8_Click(object sender, EventArgs e)
         {
-            Console.Write("Drag And Drop File Into Console: ");
-            Program.FilePath = Console.ReadLine();
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.Filter = "Executables (*.exe)|*.exe|All files (*.*)|*.*";
+                openFileDialog.FilterIndex = 2;
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    Program.FilePath = openFileDialog.FileName;
+                }
+            }
             Program.Module = ModuleDefMD.Load(Program.FilePath);
             Program.FileExtension = Path.GetExtension(Program.FilePath);
             label1.Text = "Current file directory:" + Program.FilePath;
 
-            Console.Clear();
-            Console.Write("Added!");
-            await Task.Delay(2000);
-            Console.Clear();
+            Console.Write("Selected File "+ Program.FilePath);
         }
 
         private void siticoneButton9_Click(object sender, EventArgs e)

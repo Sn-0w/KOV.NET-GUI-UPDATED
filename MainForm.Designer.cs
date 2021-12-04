@@ -712,7 +712,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::kov.NET.Resource1._75764647;
             this.pictureBox1.Location = new System.Drawing.Point(15, 18);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(78, 74);

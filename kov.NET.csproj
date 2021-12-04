@@ -41,11 +41,11 @@
       <HintPath>packages\dnlib.3.3.5\lib\net45\dnlib.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI">
-      <HintPath>..\..\Desktop\Exxon.Pro-Shell\Exxon.Pro-Shell\bin\Debug\Guna.UI.dll</HintPath>
+      <HintPath>Project Files\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Siticone.UI">
-      <HintPath>..\..\Desktop\Exxon.Pro-Shell\Exxon.Pro-Shell\bin\Debug\Siticone.UI.dll</HintPath>
+      <HintPath>Project Files\Siticone.UI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -63,49 +63,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Project Files\AssemblyInfo.cs" />
+    <Compile Include="Project Files\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
     <Compile Include="Protections\Control Flow\CFlowHelper.cs" />
-    <Compile Include="CryptoRandom.cs" />
+    <Compile Include="Protections\Utils\CryptoRandom.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProxyInts.cs" />
-    <Compile Include="IntAdder.cs" />
+    <Compile Include="Protections\ProxyInts.cs" />
+    <Compile Include="Protections\IntAdder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Protections\Control Flow\ControlFlow.cs" />
-    <Compile Include="L2F.cs" />
-    <Compile Include="IntEncoding.cs" />
-    <Compile Include="Renamer.cs" />
-    <Compile Include="Resource1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resource1.resx</DependentUpon>
-    </Compile>
-    <Compile Include="StringEncryption.cs" />
-    <Compile Include="DefAnalyzer.cs" />
-    <Compile Include="EventDefAnalyzer.cs" />
-    <Compile Include="FieldDefAnalyzer.cs" />
-    <Compile Include="MethodDefAnalyzer.cs" />
-    <Compile Include="ParameterAnalyzer.cs" />
-    <Compile Include="PropertyDefAnalyzer.cs" />
-    <Compile Include="InjectContext.cs" />
-    <Compile Include="InjectHelper.cs" />
-    <Compile Include="Randomizer.cs" />
-    <Compile Include="MemberRenamer.cs" />
-    <Compile Include="StringDecoder.cs" />
+    <Compile Include="Protections\L2F.cs" />
+    <Compile Include="Protections\IntEncoding.cs" />
+    <Compile Include="Protections\Renamer.cs" />
+    <Compile Include="Protections\StringEncryption.cs" />
+    <Compile Include="Protections\Analyzers\DefAnalyzer.cs" />
+    <Compile Include="Protections\Analyzers\EventDefAnalyzer.cs" />
+    <Compile Include="Protections\Analyzers\FieldDefAnalyzer.cs" />
+    <Compile Include="Protections\Analyzers\MethodDefAnalyzer.cs" />
+    <Compile Include="Protections\Analyzers\ParameterAnalyzer.cs" />
+    <Compile Include="Protections\Analyzers\PropertyDefAnalyzer.cs" />
+    <Compile Include="Protections\Utils\InjectContext.cs" />
+    <Compile Include="Protections\Utils\InjectHelper.cs" />
+    <Compile Include="Protections\Utils\Randomizer.cs" />
+    <Compile Include="Protections\MemberRenamer.cs" />
+    <Compile Include="Protections\StringDecoder.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Project Files\App.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resource1.resx">
+    <EmbeddedResource Include="Project Files\Resource1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
@@ -113,8 +114,7 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-    <None Include="Resources\75764647.png" />
+    <None Include="Project Files\packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

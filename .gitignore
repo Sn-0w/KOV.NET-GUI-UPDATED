@@ -1,2 +1,19 @@
 
 *.dll
+.vs/kov.NET/v16/.suo
+*.xml
+*.exe
+*.config
+*.pdb
+.vs/kov.NET/v16/.suo
+.vs/kov.NET/v16/.suo
+obj/Debug/DesignTimeResolveAssemblyReferences.cache
+obj/Debug/kov.NET.csproj.CoreCompileInputs.cache
+obj/Debug/kov.NET.csproj.FileListAbsolute.txt
+obj/Debug/kov.NET.csproj.GenerateResource.cache
+obj/Debug/kov.NET.MainForm.resources
+obj/Debug/kov.NET.Project_Files.Resource1.resources
+obj/Debug/DesignTimeResolveAssemblyReferences.cache
+obj/Debug/DesignTimeResolveAssemblyReferences.cache
+.vs/kov.NET/v16/.suo
+obj/Debug/DesignTimeResolveAssemblyReferences.cache
