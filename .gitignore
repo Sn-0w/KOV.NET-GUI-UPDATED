@@ -1,4 +1,7 @@
-
+**/obj/Debug/
+**/packages/dnlib.3.3.5/
+**/bin/Debug/
+**/bin/Release/
 *.dll
 .vs/kov.NET/v16/.suo
 *.xml
