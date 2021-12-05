@@ -23,7 +23,7 @@ namespace kov.NET.Protections
             {
                 foreach (var method in type.Methods)
                 {
-                    if (method.IsRuntimeSpecialName || method.IsSpecialName) continue;
+                    if (method.IsRuntimeSpecialName || method.IsSpecialName || method.Name == "Invoke") continue;
                     method.CustomAttributes.Add(attr);
                     method.Name = "<Kov.NET>" + method.Name;
                 }

@@ -11,7 +11,9 @@ namespace kov.NET.Utils.Analyzer
 				return false;
 			if (method.DeclaringType.IsForwarder)
 				return false;
-            if (method.IsConstructor || method.IsStaticConstructor)
+			if (method.Name == "Invoke")
+				return false;
+			if (method.IsConstructor || method.IsStaticConstructor)
                 return false;
 			return true;
 		}

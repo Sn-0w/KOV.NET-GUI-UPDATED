@@ -66,7 +66,7 @@ namespace kov.NET.Protections
 			}
 			return result;
 		}
-		private static void toDoBody(CFHelper cFHelper, MethodDef method, Blocks blocks, TypeDef typeDef)
+		public static void toDoBody(CFHelper cFHelper, MethodDef method, Blocks blocks, TypeDef typeDef)
 		{
 			blocks.Scramble(out blocks);
 			method.Body.Instructions.Clear();

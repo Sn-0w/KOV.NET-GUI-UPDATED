@@ -34,6 +34,7 @@ namespace kov.NET
                 Console.WriteLine("Encoding ints...");
                 IntEncoding.Execute();
             }
+
             if (siticoneCustomCheckBox2.Checked)
             {
                 Console.WriteLine("Injecting ControlFlow...");
@@ -50,6 +51,11 @@ namespace kov.NET
                 ProxyInts.Execute();
                 MethodProxy.Execute();
             }
+            if (siticoneCustomCheckBox10.Checked)
+            {
+                Console.WriteLine("Adding Delegates...");
+                Delegates.Execute();
+            }
             if (siticoneCustomCheckBox7.Checked)
             {
                 Console.WriteLine("Moving Variables...");
@@ -60,6 +66,7 @@ namespace kov.NET
                 Console.WriteLine("Converting Strings into Arrays...");
                 StringToArray.Execute();
             }
+            
             if (siticoneCustomCheckBox3.Checked)
             {
                 Console.WriteLine("Renaming...");

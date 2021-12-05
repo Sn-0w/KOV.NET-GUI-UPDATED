@@ -7,7 +7,7 @@ namespace kov.NET.Utils.Analyzer
 		public override bool Execute(object context)
 		{
 			FieldDef field = (FieldDef)context;
-			if (field.IsRuntimeSpecialName)
+			if (field.IsRuntimeSpecialName || field.IsSpecialName)
 				return false;
 			if (field.IsLiteral && field.DeclaringType.IsEnum)
 				return false;
