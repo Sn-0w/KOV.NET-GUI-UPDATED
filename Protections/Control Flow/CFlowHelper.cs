@@ -87,7 +87,7 @@ namespace kov.NET
 			int num = CFHelper.generator.Next(0, 2147483647);
 			bool flag = Convert.ToBoolean(CFHelper.generator.Next(2147483647));
 			int num2 = CFHelper.generator.Next(2147483647);
-			list.Add(Instruction.Create(OpCodes.Ldc_I4, value - num + (flag ? (0 - num2) : num2)));
+			list.Add(Instruction.Create(OpCodes.Ldc_I4, (value - num + (flag ? (0 - num2) : num2))));
 			list.Add(Instruction.Create(OpCodes.Ldc_I4, num));
 			list.Add(Instruction.Create(OpCodes.Add));
 			list.Add(Instruction.Create(OpCodes.Ldc_I4, num2));

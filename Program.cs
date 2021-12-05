@@ -11,7 +11,6 @@ namespace kov.NET
     class Program
     {
         public static ModuleDefMD Module { get; set; }
-        public ModuleDef ManifestModule;
 
         public static string FileExtension { get; set; }
 

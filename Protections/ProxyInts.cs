@@ -57,6 +57,7 @@ namespace kov.NET
                             instr[i].Operand = meth1;
                             Amount++;
                         }
+                       
                     }
                 }
             }

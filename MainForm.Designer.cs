@@ -45,6 +45,8 @@
             this.siticoneButton8 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneButton7 = new Siticone.UI.WinForms.SiticoneButton();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.siticoneCustomCheckBox8 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.siticoneCustomCheckBox7 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
             this.label8 = new System.Windows.Forms.Label();
             this.siticoneCustomCheckBox6 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
@@ -66,6 +68,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -78,8 +84,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.siticoneTransparentDrag1 = new Siticone.UI.WinForms.SiticoneTransparentDrag();
-            this.siticoneCustomCheckBox8 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
-            this.label18 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -88,10 +93,12 @@
             this.tabPage2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -348,6 +355,35 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(442, 338);
             this.panel3.TabIndex = 0;
+            // 
+            // siticoneCustomCheckBox8
+            // 
+            this.siticoneCustomCheckBox8.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.siticoneCustomCheckBox8.CheckedState.BorderRadius = 2;
+            this.siticoneCustomCheckBox8.CheckedState.BorderThickness = 0;
+            this.siticoneCustomCheckBox8.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.siticoneCustomCheckBox8.CheckedState.Parent = this.siticoneCustomCheckBox8;
+            this.siticoneCustomCheckBox8.Location = new System.Drawing.Point(400, 202);
+            this.siticoneCustomCheckBox8.Name = "siticoneCustomCheckBox8";
+            this.siticoneCustomCheckBox8.ShadowDecoration.Parent = this.siticoneCustomCheckBox8;
+            this.siticoneCustomCheckBox8.Size = new System.Drawing.Size(20, 20);
+            this.siticoneCustomCheckBox8.TabIndex = 26;
+            this.siticoneCustomCheckBox8.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.siticoneCustomCheckBox8.UncheckedState.BorderRadius = 2;
+            this.siticoneCustomCheckBox8.UncheckedState.BorderThickness = 0;
+            this.siticoneCustomCheckBox8.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.siticoneCustomCheckBox8.UncheckedState.Parent = this.siticoneCustomCheckBox8;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(16, 202);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(105, 16);
+            this.label18.TabIndex = 25;
+            this.label18.Text = "Strings to Arrays";
             // 
             // siticoneCustomCheckBox7
             // 
@@ -619,6 +655,7 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabPage3.Controls.Add(this.panel7);
             this.tabPage3.Controls.Add(this.panel6);
             this.tabPage3.Controls.Add(this.label11);
             this.tabPage3.Controls.Add(this.panel5);
@@ -628,6 +665,51 @@
             this.tabPage3.Size = new System.Drawing.Size(603, 592);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.panel7.Controls.Add(this.pictureBox3);
+            this.panel7.Controls.Add(this.label19);
+            this.panel7.Controls.Add(this.label20);
+            this.panel7.Controls.Add(this.label21);
+            this.panel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel7.ForeColor = System.Drawing.Color.White;
+            this.panel7.Location = new System.Drawing.Point(94, 308);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(442, 108);
+            this.panel7.TabIndex = 20;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(111, 66);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(210, 15);
+            this.label19.TabIndex = 19;
+            this.label19.Text = "Job : Modified and added Protections";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(111, 44);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(121, 15);
+            this.label20.TabIndex = 18;
+            this.label20.Text = "Discord: Snow#0013";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(99, 18);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(46, 18);
+            this.label21.TabIndex = 13;
+            this.label21.Text = "Snow";
             // 
             // panel6
             // 
@@ -755,34 +837,15 @@
             this.siticoneTransparentDrag1.DragStartTransparencyValue = 0.9D;
             this.siticoneTransparentDrag1.TargetDragControl = this.panel1;
             // 
-            // siticoneCustomCheckBox8
+            // pictureBox3
             // 
-            this.siticoneCustomCheckBox8.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.siticoneCustomCheckBox8.CheckedState.BorderRadius = 2;
-            this.siticoneCustomCheckBox8.CheckedState.BorderThickness = 0;
-            this.siticoneCustomCheckBox8.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.siticoneCustomCheckBox8.CheckedState.Parent = this.siticoneCustomCheckBox8;
-            this.siticoneCustomCheckBox8.Location = new System.Drawing.Point(400, 202);
-            this.siticoneCustomCheckBox8.Name = "siticoneCustomCheckBox8";
-            this.siticoneCustomCheckBox8.ShadowDecoration.Parent = this.siticoneCustomCheckBox8;
-            this.siticoneCustomCheckBox8.Size = new System.Drawing.Size(20, 20);
-            this.siticoneCustomCheckBox8.TabIndex = 26;
-            this.siticoneCustomCheckBox8.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.siticoneCustomCheckBox8.UncheckedState.BorderRadius = 2;
-            this.siticoneCustomCheckBox8.UncheckedState.BorderThickness = 0;
-            this.siticoneCustomCheckBox8.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.siticoneCustomCheckBox8.UncheckedState.Parent = this.siticoneCustomCheckBox8;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(16, 202);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(105, 16);
-            this.label18.TabIndex = 25;
-            this.label18.Text = "Strings to Arrays";
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(15, 18);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(78, 74);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 18;
+            this.pictureBox3.TabStop = false;
             // 
             // MainForm
             // 
@@ -811,12 +874,15 @@
             this.panel4.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -874,5 +940,10 @@
         private System.Windows.Forms.Label label8;
         private Siticone.UI.WinForms.SiticoneCustomCheckBox siticoneCustomCheckBox8;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
