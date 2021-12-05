@@ -12,7 +12,7 @@ namespace kov.NET.Protections
     {
         public static void Execute()
         {
-            var renamedvartype = new TypeDefUser("n", "t",
+            var renamedvartype = new TypeDefUser("n", "Type",
                                 Program.Module.CorLibTypes.Object.TypeDefOrRef);
             renamedvartype.Attributes = TypeAttributes.Public | TypeAttributes.AutoLayout |
                                 TypeAttributes.Class | TypeAttributes.AnsiClass;
