@@ -11,6 +11,7 @@ namespace kov.NET.Protections
 {
     internal class StringToArray
     {
+        static Random rng = new Random();
         public static void Execute()
         {
             foreach (TypeDef type in Program.Module.GetTypes())
@@ -37,7 +38,7 @@ namespace kov.NET.Protections
                             method.Body.Variables.Add(local);
 
                             //add array constructor
-                            instrreal.Add(new Instruction(OpCodes.Ldc_I4, 128));
+                            instrreal.Add(new Instruction(OpCodes.Ldc_I4, 256));
                             instrreal.Add(new Instruction(OpCodes.Newarr, method.Module.Import(typeof(string))));
                             instrreal.Add(new Instruction(OpCodes.Stloc_S, local));
 
@@ -46,8 +47,24 @@ namespace kov.NET.Protections
                             {
                                 instrreal.Add(new Instruction(OpCodes.Ldloc, local));
                                 instrreal.Add(new Instruction(OpCodes.Ldc_I4, count));
-                                instrreal.Add(new Instruction(OpCodes.Ldc_I4, (int)boi));
-                                instrreal.Add(Instruction.Create(OpCodes.Call, Program.Module.Import(typeof(System.Convert).GetMethod("ToChar", new Type[] { typeof(int) }))));
+                                switch (rng.Next(0,2))
+                                {
+                                    case 0:
+                                        {
+                                            instrreal.Add(new Instruction(OpCodes.Ldc_I8, (long)boi));
+                                            instrreal.Add(Instruction.Create(OpCodes.Call, Program.Module.Import(typeof(System.Convert).GetMethod("ToChar", new Type[] { typeof(long) }))));
+                                            break;
+                                        }
+                                    case 1:
+                                        {
+                                            instrreal.Add(new Instruction(OpCodes.Ldc_I4, (int)boi));
+                                            instrreal.Add(Instruction.Create(OpCodes.Call, Program.Module.Import(typeof(System.Convert).GetMethod("ToChar", new Type[] { typeof(int) }))));
+                                            break;
+                                        }
+                                   
+
+                                }
+
                                 instrreal.Add(Instruction.Create(OpCodes.Call, Program.Module.Import(typeof(System.Convert).GetMethod("ToString", new Type[] { typeof(char) }))));
                                 instrreal.Add(new Instruction(OpCodes.Stelem_Ref));
                                 count++;

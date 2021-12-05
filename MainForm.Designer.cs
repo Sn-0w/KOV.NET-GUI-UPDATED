@@ -85,6 +85,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.siticoneTransparentDrag1 = new Siticone.UI.WinForms.SiticoneTransparentDrag();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.siticoneCustomCheckBox9 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -333,6 +335,8 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.panel3.Controls.Add(this.siticoneCustomCheckBox9);
+            this.panel3.Controls.Add(this.label22);
             this.panel3.Controls.Add(this.siticoneCustomCheckBox8);
             this.panel3.Controls.Add(this.label18);
             this.panel3.Controls.Add(this.siticoneCustomCheckBox7);
@@ -847,6 +851,35 @@
             this.pictureBox3.TabIndex = 18;
             this.pictureBox3.TabStop = false;
             // 
+            // siticoneCustomCheckBox9
+            // 
+            this.siticoneCustomCheckBox9.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.siticoneCustomCheckBox9.CheckedState.BorderRadius = 2;
+            this.siticoneCustomCheckBox9.CheckedState.BorderThickness = 0;
+            this.siticoneCustomCheckBox9.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.siticoneCustomCheckBox9.CheckedState.Parent = this.siticoneCustomCheckBox9;
+            this.siticoneCustomCheckBox9.Location = new System.Drawing.Point(400, 228);
+            this.siticoneCustomCheckBox9.Name = "siticoneCustomCheckBox9";
+            this.siticoneCustomCheckBox9.ShadowDecoration.Parent = this.siticoneCustomCheckBox9;
+            this.siticoneCustomCheckBox9.Size = new System.Drawing.Size(20, 20);
+            this.siticoneCustomCheckBox9.TabIndex = 28;
+            this.siticoneCustomCheckBox9.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.siticoneCustomCheckBox9.UncheckedState.BorderRadius = 2;
+            this.siticoneCustomCheckBox9.UncheckedState.BorderThickness = 0;
+            this.siticoneCustomCheckBox9.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.siticoneCustomCheckBox9.UncheckedState.Parent = this.siticoneCustomCheckBox9;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(16, 228);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(92, 16);
+            this.label22.TabIndex = 27;
+            this.label22.Text = "Hide Methods";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -945,5 +978,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private Siticone.UI.WinForms.SiticoneCustomCheckBox siticoneCustomCheckBox9;
+        private System.Windows.Forms.Label label22;
     }
 }

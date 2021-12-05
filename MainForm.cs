@@ -65,6 +65,11 @@ namespace kov.NET
                 Console.WriteLine("Renaming...");
                 Renamer.Execute();
             }
+            if (siticoneCustomCheckBox9.Checked)
+            {
+                Console.WriteLine("Hiding Methods...");
+                HideMethods.Execute();
+            }
 
             var pathez = $"{Program.FilePath}-kov.exe";
             ModuleWriterOptions opts = new ModuleWriterOptions(Program.Module) { Logger = DummyLogger.NoThrowInstance };
