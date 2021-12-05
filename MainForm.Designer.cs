@@ -45,6 +45,8 @@
             this.siticoneButton8 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneButton7 = new Siticone.UI.WinForms.SiticoneButton();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.siticoneCustomCheckBox7 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.siticoneCustomCheckBox6 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
             this.siticoneCustomCheckBox5 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
             this.siticoneCustomCheckBox4 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
@@ -76,8 +78,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.siticoneTransparentDrag1 = new Siticone.UI.WinForms.SiticoneTransparentDrag();
-            this.siticoneCustomCheckBox7 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.siticoneCustomCheckBox8 = new Siticone.UI.WinForms.SiticoneCustomCheckBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -276,7 +278,7 @@
             this.siticoneButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneButton9.ForeColor = System.Drawing.Color.White;
             this.siticoneButton9.HoveredState.Parent = this.siticoneButton9;
-            this.siticoneButton9.Location = new System.Drawing.Point(95, 401);
+            this.siticoneButton9.Location = new System.Drawing.Point(95, 483);
             this.siticoneButton9.Name = "siticoneButton9";
             this.siticoneButton9.ShadowDecoration.Parent = this.siticoneButton9;
             this.siticoneButton9.Size = new System.Drawing.Size(442, 30);
@@ -294,7 +296,7 @@
             this.siticoneButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneButton8.ForeColor = System.Drawing.Color.White;
             this.siticoneButton8.HoveredState.Parent = this.siticoneButton8;
-            this.siticoneButton8.Location = new System.Drawing.Point(95, 365);
+            this.siticoneButton8.Location = new System.Drawing.Point(95, 447);
             this.siticoneButton8.Name = "siticoneButton8";
             this.siticoneButton8.ShadowDecoration.Parent = this.siticoneButton8;
             this.siticoneButton8.Size = new System.Drawing.Size(442, 30);
@@ -312,7 +314,7 @@
             this.siticoneButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneButton7.ForeColor = System.Drawing.Color.White;
             this.siticoneButton7.HoveredState.Parent = this.siticoneButton7;
-            this.siticoneButton7.Location = new System.Drawing.Point(95, 329);
+            this.siticoneButton7.Location = new System.Drawing.Point(95, 411);
             this.siticoneButton7.Name = "siticoneButton7";
             this.siticoneButton7.ShadowDecoration.Parent = this.siticoneButton7;
             this.siticoneButton7.Size = new System.Drawing.Size(442, 30);
@@ -324,6 +326,8 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.panel3.Controls.Add(this.siticoneCustomCheckBox8);
+            this.panel3.Controls.Add(this.label18);
             this.panel3.Controls.Add(this.siticoneCustomCheckBox7);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.siticoneCustomCheckBox6);
@@ -342,8 +346,37 @@
             this.panel3.Controls.Add(this.siticoneSeparator1);
             this.panel3.Location = new System.Drawing.Point(95, 57);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(442, 257);
+            this.panel3.Size = new System.Drawing.Size(442, 338);
             this.panel3.TabIndex = 0;
+            // 
+            // siticoneCustomCheckBox7
+            // 
+            this.siticoneCustomCheckBox7.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.siticoneCustomCheckBox7.CheckedState.BorderRadius = 2;
+            this.siticoneCustomCheckBox7.CheckedState.BorderThickness = 0;
+            this.siticoneCustomCheckBox7.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.siticoneCustomCheckBox7.CheckedState.Parent = this.siticoneCustomCheckBox7;
+            this.siticoneCustomCheckBox7.Location = new System.Drawing.Point(400, 177);
+            this.siticoneCustomCheckBox7.Name = "siticoneCustomCheckBox7";
+            this.siticoneCustomCheckBox7.ShadowDecoration.Parent = this.siticoneCustomCheckBox7;
+            this.siticoneCustomCheckBox7.Size = new System.Drawing.Size(20, 20);
+            this.siticoneCustomCheckBox7.TabIndex = 24;
+            this.siticoneCustomCheckBox7.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.siticoneCustomCheckBox7.UncheckedState.BorderRadius = 2;
+            this.siticoneCustomCheckBox7.UncheckedState.BorderThickness = 0;
+            this.siticoneCustomCheckBox7.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.siticoneCustomCheckBox7.UncheckedState.Parent = this.siticoneCustomCheckBox7;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(16, 177);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(103, 16);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "Move Variables";
             // 
             // siticoneCustomCheckBox6
             // 
@@ -524,7 +557,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(9, 225);
+            this.label1.Location = new System.Drawing.Point(9, 307);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 13);
             this.label1.TabIndex = 7;
@@ -533,7 +566,7 @@
             // siticoneSeparator1
             // 
             this.siticoneSeparator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.siticoneSeparator1.Location = new System.Drawing.Point(20, 204);
+            this.siticoneSeparator1.Location = new System.Drawing.Point(20, 286);
             this.siticoneSeparator1.Name = "siticoneSeparator1";
             this.siticoneSeparator1.Size = new System.Drawing.Size(400, 10);
             this.siticoneSeparator1.TabIndex = 6;
@@ -722,34 +755,34 @@
             this.siticoneTransparentDrag1.DragStartTransparencyValue = 0.9D;
             this.siticoneTransparentDrag1.TargetDragControl = this.panel1;
             // 
-            // siticoneCustomCheckBox7
+            // siticoneCustomCheckBox8
             // 
-            this.siticoneCustomCheckBox7.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.siticoneCustomCheckBox7.CheckedState.BorderRadius = 2;
-            this.siticoneCustomCheckBox7.CheckedState.BorderThickness = 0;
-            this.siticoneCustomCheckBox7.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.siticoneCustomCheckBox7.CheckedState.Parent = this.siticoneCustomCheckBox7;
-            this.siticoneCustomCheckBox7.Location = new System.Drawing.Point(400, 177);
-            this.siticoneCustomCheckBox7.Name = "siticoneCustomCheckBox7";
-            this.siticoneCustomCheckBox7.ShadowDecoration.Parent = this.siticoneCustomCheckBox7;
-            this.siticoneCustomCheckBox7.Size = new System.Drawing.Size(20, 20);
-            this.siticoneCustomCheckBox7.TabIndex = 24;
-            this.siticoneCustomCheckBox7.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.siticoneCustomCheckBox7.UncheckedState.BorderRadius = 2;
-            this.siticoneCustomCheckBox7.UncheckedState.BorderThickness = 0;
-            this.siticoneCustomCheckBox7.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.siticoneCustomCheckBox7.UncheckedState.Parent = this.siticoneCustomCheckBox7;
+            this.siticoneCustomCheckBox8.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.siticoneCustomCheckBox8.CheckedState.BorderRadius = 2;
+            this.siticoneCustomCheckBox8.CheckedState.BorderThickness = 0;
+            this.siticoneCustomCheckBox8.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.siticoneCustomCheckBox8.CheckedState.Parent = this.siticoneCustomCheckBox8;
+            this.siticoneCustomCheckBox8.Location = new System.Drawing.Point(400, 202);
+            this.siticoneCustomCheckBox8.Name = "siticoneCustomCheckBox8";
+            this.siticoneCustomCheckBox8.ShadowDecoration.Parent = this.siticoneCustomCheckBox8;
+            this.siticoneCustomCheckBox8.Size = new System.Drawing.Size(20, 20);
+            this.siticoneCustomCheckBox8.TabIndex = 26;
+            this.siticoneCustomCheckBox8.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.siticoneCustomCheckBox8.UncheckedState.BorderRadius = 2;
+            this.siticoneCustomCheckBox8.UncheckedState.BorderThickness = 0;
+            this.siticoneCustomCheckBox8.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.siticoneCustomCheckBox8.UncheckedState.Parent = this.siticoneCustomCheckBox8;
             // 
-            // label8
+            // label18
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(16, 177);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(103, 16);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "Move Variables";
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(16, 202);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(105, 16);
+            this.label18.TabIndex = 25;
+            this.label18.Text = "Strings to Arrays";
             // 
             // MainForm
             // 
@@ -839,5 +872,7 @@
         private Siticone.UI.WinForms.SiticoneTransparentDrag siticoneTransparentDrag1;
         private Siticone.UI.WinForms.SiticoneCustomCheckBox siticoneCustomCheckBox7;
         private System.Windows.Forms.Label label8;
+        private Siticone.UI.WinForms.SiticoneCustomCheckBox siticoneCustomCheckBox8;
+        private System.Windows.Forms.Label label18;
     }
 }

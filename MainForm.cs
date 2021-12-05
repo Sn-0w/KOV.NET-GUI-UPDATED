@@ -48,11 +48,17 @@ namespace kov.NET
             {
                 Console.WriteLine("Adding Proxys...");
                 ProxyInts.Execute();
+                MethodProxy.Execute();
             }
             if (siticoneCustomCheckBox7.Checked)
             {
                 Console.WriteLine("Moving Variables...");
                 VariableMover.Execute();
+            }
+            if (siticoneCustomCheckBox8.Checked)
+            {
+                Console.WriteLine("Converting Strings into Arrays...");
+                StringToArray.Execute();
             }
             if (siticoneCustomCheckBox3.Checked)
             {

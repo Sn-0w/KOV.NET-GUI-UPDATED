@@ -70,6 +70,8 @@
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
     <Compile Include="Protections\Control Flow\CFlowHelper.cs" />
+    <Compile Include="Protections\MethodProxy.cs" />
+    <Compile Include="Protections\StringToArray.cs" />
     <Compile Include="Protections\Utils\CryptoRandom.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
